@@ -12,16 +12,19 @@ import path, {dirname} from 'path';
 import {fileURLToPath} from 'url';
 const _dirname = dirname(fileURLToPath(import.meta.url));
 
+//IMPORT ROUTER (can name it anything so long as path is correct)
+import indexRouter from './app/routes/index.route.server.js';
+
 //instantiate app server
 const app = express();
 
 //set up ViewEngine EJS
-app.set('views', path.join(_dirname, '\views'));
+app.set('views', path.join(_dirname, '/app/views'));
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
-app.use(express.json);
-app.use(express.urlencoded({ extended: false}));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(_dirname, '../public')));
 app.use(session({
@@ -30,22 +33,8 @@ app.use(session({
     resave: false
 }));
 
-
-//customer middleware (function)
-function helloWorld(req, res, next){
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World')
-}
-
-//customer middleware (function)
-function goodbyeWorld(req, res, next){
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Bye World')
-}
-
-//app.use('/', helloWorld);
-app.use('/hello', helloWorld);
-app.use('/bye', goodbyeWorld);
+//Use Routes - to link to express application
+app.use('/', indexRouter);
 
 //run app
 app.listen(3000);
