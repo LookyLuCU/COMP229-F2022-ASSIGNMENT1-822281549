@@ -1,18 +1,18 @@
 /*
-COMP229 Section 014 - F2022 
+COMP229-F2022-ASSIGNMENT1-822281549
 Sheila Donnelly
 Student #822281549
+October 7th, 2022
 */
 
 //INDEX CONTROLLER
 
-//customer middleware (function) moved from from server.js
 export function displayHomePage(req, res, next){
     res.render('index', { title: 'Home', page: 'home' });
 };
 
-export function displayAboutPage(req, res, next) {
-    res.render('index', { title: 'About', page: 'about' });
+export function displayAboutMePage(req, res, next) {
+    res.render('index', { title: 'About Me', page: 'about' });
 }
 
 export function displayProjectsPage(req, res, next) {

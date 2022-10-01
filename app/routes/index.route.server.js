@@ -1,14 +1,15 @@
 /*
-COMP229 Section 014 - F2022 
+COMP229-F2022-ASSIGNMENT1-822281549
 Sheila Donnelly
 Student #822281549
+October 7th, 2022
 */
 
 //INDEX ROUTES
 
 import { Router } from 'express';
 import { displayHomePage, 
-    displayAboutPage, 
+    displayAboutMePage, 
     displayProjectsPage, 
     displayServicesPage, 
     displayContactPage } from '../controllers/index.controller.server.js'
@@ -16,11 +17,10 @@ import { displayHomePage,
 //INSTANTIATING ABOVE ROUTER
 const router = new Router();
 
-//ROUTERcan be reused for multiple paths (see below)
-//app.use('/', helloWorld); moved from server.js
-router.get('/', displayHomePage);          //root or home page link
-router.get('/home', displayHomePage);   //can be used for all my route paths
-router.get('/about', displayAboutPage);     //synced to matching controller code
+//ROUTER 
+router.get('/', displayHomePage);          //home page link
+router.get('/home', displayHomePage);   
+router.get('/about', displayAboutMePage);     
 router.get('/projects', displayProjectsPage); 
 router.get('/services', displayServicesPage); 
 router.get('/contact', displayContactPage); 
