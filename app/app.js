@@ -1,5 +1,8 @@
-//previously used to connect to connect with "require"
-// const connect = require('connect');
+/*
+COMP229 Section 014 - F2022 
+Sheila Donnelly
+Student #822281549
+*/
 
 //import express using es6+
 import express from "express";

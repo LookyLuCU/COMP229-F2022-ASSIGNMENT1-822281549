@@ -1,4 +1,10 @@
-//INDEX CONTROLLER - functions go here
+/*
+COMP229 Section 014 - F2022 
+Sheila Donnelly
+Student #822281549
+*/
+
+//INDEX CONTROLLER
 
 //customer middleware (function) moved from from server.js
 export function displayHomePage(req, res, next){
