@@ -20,7 +20,7 @@ const _dirname = dirname(fileURLToPath(import.meta.url));
 import { Secret } from "../config/config.js";
 
 //IMPORT ROUTER (can name it anything so long as path is correct)
-import indexRouter from './routes/index.route.server.js';
+import indexRouter from './routes/index.js';
 
 //instantiate app server
 const app = express();
