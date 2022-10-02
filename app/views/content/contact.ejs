@@ -1,5 +1,13 @@
+<!--
+COMP229-F2022-ASSIGNMENT1-822281549
+Sheila Donnelly
+Student #822281549
+October 7th, 2022
+-->
+
 <h1> <%= title %> </h1>
 
+<!--Contact Details Card (Bootstrap - Card: Content Container)-->
 <div class="card" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">Sheila Jean Donnelly</h5>
@@ -11,3 +19,30 @@
       <a href="https://github.com/LookyLuCU" target="_blank">GitHub</a>
     </div>
   </div>
+
+  <hr><hr>
+
+  <!--Contact Me Form (Bootstrap) -->
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Contact me</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-text">
+      <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for employment opportunities">
+    </div>
+    <input type="text" class="form-control" aria-label="Text input with checkbox">
+  </div>
+  
+  <div class="input-group">
+    <div class="input-group-text">
+      <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+    </div>
+    <input type="text" class="form-control" aria-label="Text input with radio button">
+  </div>
+  <input class="btn btn-primary" type="submit" value="Submit">
