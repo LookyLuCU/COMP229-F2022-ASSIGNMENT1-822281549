@@ -12,18 +12,20 @@ import { displayHomePage,
     displayAboutMePage, 
     displayProjectsPage, 
     displayServicesPage, 
-    displayContactPage } from '../controllers/index.controller.server.js'
+    displayContactPage,
+    displayThankYouPage } from '../controllers/index.controller.server.js'
 
 //INSTANTIATING ABOVE ROUTER
 const router = new Router();
 
 //ROUTER 
-router.get('/', displayHomePage);          //home page link
+router.get('/', displayHomePage);          //home page path
 router.get('/home', displayHomePage);   
 router.get('/about', displayAboutMePage);     
 router.get('/projects', displayProjectsPage); 
 router.get('/services', displayServicesPage); 
 router.get('/contact', displayContactPage); 
+router.get('/message', displayThankYouPage);
 
 //needs to be exportable for use
 export default router;

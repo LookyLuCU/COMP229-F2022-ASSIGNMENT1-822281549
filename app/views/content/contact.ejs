@@ -5,38 +5,63 @@ Student #822281549
 October 7th, 2022
 -->
 
-<!--Contact Details Card (Bootstrap - Card: Content Container)-->
-  <div class="card-body">
-      <h5 class="card-title">Sheila Jean Donnelly</h5>
-      <h6  class="card-subtitle mb-2 text-muted">Software Architect</h6>
-      <hr>
-      <h7  class="card-text">Sheila.donnelly@outlook.com</h7>
-      <p  class="card-text">1-640-329-6953</p>
-      <a href="https://www.linkedin.com/in/sheila-donnelly/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/LookyLuCU" target="_blank">GitHub</a>
-    </div>
-    <br><hr>
+<!--Contact Details Page-->
+<!--(Bootstrap - Card: Content Container)-->
 
-  <!--Contact Me Form (Bootstrap) -->
-    <label for="exampleFormControlInput1" class="form-label">Contact me</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-  </div>
-  <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
 
-  <div class="input-group mb-3">
-    <div class="input-group-text">
-      <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for employment opportunities">
-    </div>
-    <input type="text" class="form-control" aria-label="Text input with checkbox">
-  </div>
+
+        <fieldset style="border-radius: 20px;  width: 350px; box-shadow: inset; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding: 25px; float:left;">
+          <div class="card-body">
+               <h5 class="card-title">Sheila Jean Donnelly</h5>
+               <h6  class="card-subtitle mb-2 text-muted">Software Architect</h6>
+               <hr>
+               <h7  class="card-text">Sheila.donnelly@outlook.com</h7>
+               <p  class="card-text">1-640-329-6953</p>
+               <a href="https://www.linkedin.com/in/sheila-donnelly/" target="_blank">LinkedIn</a>
+               <a href="https://github.com/LookyLuCU" target="_blank">GitHub</a>
+          </div>
+        </fieldset>
+     
+          
+
+  <!--Contact Me Form (Bootstrap: Forms) -->
+
+        <fieldset style="padding: 0px 100px;">
+          <legend>Contact Sheila</legend>
+          <form>
+            <div class="mb-3 row g-3">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+              </div>
+              
+              <div class="row g-3">
+                <div class="col">
+                  <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number">
+                </div>
+              </div>
+              <br>
+              <div class="row g-3">
+                <div class="col">
+                  <label for="email_body" class="form-label">Message</label>
+                  <textarea class="form-control" id="email_body" rows="3"></textarea>
+                </div>
+              </div>
+              <br>
+              <div class="row g-3">
+                <div class="col">
+                  <a class="btn btn-primary btn-lg <%= (page == 'home') ? 'active' : ''; %>" aria-current="page" href="/home">Submit</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </fieldset>
+     
+
   
-  <div class="input-group">
-    <div class="input-group-text">
-      <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
-    </div>
-    <input type="text" class="form-control" aria-label="Text input with radio button">
-  </div>
-  <input class="btn btn-primary" type="submit" value="Submit">
