@@ -43,11 +43,4 @@ app.use(session({
 //Use Routes - to link to express application
 app.use('/', indexRouter);
 
-/*
-//run app
-app.listen(3000);
-
-console.log('Server running at http://localhost:3000');
-*/
-
 export default app;

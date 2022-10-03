@@ -12,8 +12,7 @@ import { displayHomePage,
     displayAboutMePage, 
     displayProjectsPage, 
     displayServicesPage, 
-    displayContactPage,
-    displayThankYouPage } from '../controllers/index.controller.server.js'
+    displayContactPage } from '../controllers/index.controller.server.js'
 
 //INSTANTIATING ABOVE ROUTER
 const router = new Router();
@@ -25,7 +24,6 @@ router.get('/about', displayAboutMePage);
 router.get('/projects', displayProjectsPage); 
 router.get('/services', displayServicesPage); 
 router.get('/contact', displayContactPage); 
-router.get('/message', displayThankYouPage);
 
 //needs to be exportable for use
 export default router;
