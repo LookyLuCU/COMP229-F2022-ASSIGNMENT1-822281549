@@ -11,8 +11,8 @@ October 7th, 2022
     background-color: rgb(218, 130, 52);
 }
 
-body{
-    background-image: url("/images/IMG_20181115_224231_620.jpg");
+.body{
+    background-image: ("/content/images/IMG_20181115_224231_620.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -94,8 +94,26 @@ body{
 
 <!--Projects Page-->
 
-.projects-columns{
-    float: left; width: 30%;
+.projects-left-column{
+    float: left; 
+    width: 30%;
+}
+
+.projects-center-columns{
+    float: left; 
+    width: 30%;
+}
+
+.projects-right-column{
+    float: right; 
+    width: 30%;
+}
+
+.project-carousel-object-background{
+    background-color: rgb(236, 232, 230);
+    border-radius: 25px; 
+    height: 500px; 
+    width: 380px;
 }
 
 .project-heading{

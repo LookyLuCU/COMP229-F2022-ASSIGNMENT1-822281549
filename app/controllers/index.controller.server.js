@@ -26,7 +26,3 @@ export function displayServicesPage(req, res, next) {
 export function displayContactPage(req, res, next) {
     res.render('index', { title: 'Contact', page: 'contact' });
 }
-
-export function displayThankYouPage(req, res, next) {
-    res.render('index', { title: 'Thank You', page: 'thankYou' });
-}
