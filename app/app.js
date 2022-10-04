@@ -5,17 +5,6 @@ Student #822281549
 October 7th, 2022
 */
 
-//IIFE Function - self executionable function
-
-function runner(){
-    function Start(){
-        console.log('App Started')
-    }
-
-    window.addEventListener('load', Start)
-}
-
-/*
 
 //import express using es6+
 import express from "express";
@@ -29,16 +18,16 @@ import {fileURLToPath} from 'url';
 const _dirname = dirname(fileURLToPath(import.meta.url));
 
 //Configuration Module
-import { Secret } from ".../config/config.js";
+import { Secret } from "../config/config.js";
 
 //IMPORT ROUTER
-import indexRouter from '.../app/routes/index.js';
+import indexRouter from './routes/index.js';
 
 //instantiate app server
 const app = express();
 
 //set up ViewEngine EJS
-app.set('views', path.join(_dirname, '.../app/views'));
+app.set('views', path.join(_dirname, '/views'));
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
@@ -56,4 +45,4 @@ app.use(session({
 app.use('/', indexRouter);
 
 export default app;
-*/
+
