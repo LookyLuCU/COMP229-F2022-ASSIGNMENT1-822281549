@@ -6,39 +6,39 @@ October 7th, 2022
 -->
  
 <!--TO DO!!-->
-<div backround-image="body">
+<div backround-image="/content/images/IMG_20181115_224231_620.jpg">
 
     <!--Welcome Message-->
-    <p style="padding: 0 px 30px 0px 20px; font-family: Brush Script MT, cursive; font-size: 45pt; text-align: center;">
+    <p class="home-welcome">
         Welcome
     </p>
 
     <!--site logo-->
-    <div class="position-relative" style="text-align: center; margin: 15px;">
+    <div class="position-relative home-logo-placement">
         <div class="position-absolute top-50 start-50 translate-middle"></div>
             <img src="/content/images/Chill Potato2.png" alt="Chill Potato" width="300" height="300"></img>
         </div>
     </div>
 
-    <!--Inspirational Quote-->
-    <blockquote cite="Mark Twain" style="padding: 0 px 30px 0px 20px; font-family: Brush Script MT, cursive; font-size: 30pt; text-align: center;">
+    <!--Mission Statement-->
+    <blockquote cite="Mark Twain" class="home-mission">
         The secret of getting ahead is getting started.
                     -Mark Twain
     </blockquote>
 
-    <!--Links to helpful pages-->
+    <!--Links to pages-->
     <div class="container" style="text-align: center;">
         <div class="row">
-            <div class="col-2" style="margin: 25pt;">
+            <div class="col-2 home-column-margins">
                 <a style="background-color: rgb(218, 130, 52);" class="btn btn-primary btn-lg <%= (page == 'projects') ? 'active' : ''; %>"  aria-current="page" href="/projects">My Projects</a>
             </div>
-            <div class="col-2" style="margin: 25pt;">
+            <div class="col-2 home-column-margins">
                 <a style="background-color: rgb(218, 130, 52);" class="btn btn-primary btn-lg <%= (page == 'services') ? 'active' : ''; %>" aria-current="page" href="/services">My Services</a>
             </div>
-            <div class="col-2" style="margin: 25pt;">
+            <div class="col-2 home-column-margins">
                 <a style="background-color: rgb(218, 130, 52);" class="btn btn-primary btn-lg <%= (page == 'about') ? 'active' : ''; %>" aria-current="page" href="/about"></style>About Me</a>
             </div>
-            <div class="col-2" style="margin: 25pt;">
+            <div class="col-2 home-column-margins">
                 <a style="background-color: rgb(218, 130, 52);" class="btn btn-primary btn-lg <%= (page == 'contact') ? 'active' : ''; %>" aria-current="page" href="/contact">Contact Me</a>
             </div>
         </div>

@@ -19,7 +19,7 @@ const _dirname = dirname(fileURLToPath(import.meta.url));
 //Configuration Module
 import { Secret } from "../config/config.js";
 
-//IMPORT ROUTER (can name it anything so long as path is correct)
+//IMPORT ROUTER
 import indexRouter from './routes/index.js';
 
 //instantiate app server
@@ -33,7 +33,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(_dirname, '../public')));
+app.use(express.static(path.join(_dirname, './public')));
 app.use(session({
     secret: Secret,
     saveUninitialied: false,
