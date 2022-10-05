@@ -25,7 +25,7 @@ October 7th, 2022
 
 .home-welcome{
     padding: 0 px 30px 0px 20px; 
-    font-family: Brush Script MT, cursive; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
     font-size: 30pt; 
     text-align: center;
 }
@@ -37,8 +37,8 @@ October 7th, 2022
 
 .home-mission{
     padding: 0 px 30px 0px 20px; 
-    font-family: Brush Script MT, cursive; 
-    font-size: 30pt; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 20pt; 
     text-align: center;
 }
 
