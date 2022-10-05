@@ -43,7 +43,10 @@ October 7th, 2022
 }
 
 .home-column-margins{
-    margin: 25pt;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: justify;
 }
 
 
