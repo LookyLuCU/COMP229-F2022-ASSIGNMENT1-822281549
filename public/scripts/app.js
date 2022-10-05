@@ -5,6 +5,10 @@ Student #822281549
 October 7th, 2022
 */
 
+ /*****COULD NOT GET APP.JS TO RUN FROM THIS FILE LOCATION
+ TRIED MULTIPLE TIMES TO ADJUST ALL RELATED PATHS 
+ IN A FERW DIFFERENT WAYS, BUT STILL GOT ERROR****/
+
 //IIFE Function - self executionable function
 
 function runner(){
@@ -16,7 +20,6 @@ function runner(){
 }
 
 /*
-
 //import express using es6+
 import express from "express";
 import cookieParser from "cookie-parser";

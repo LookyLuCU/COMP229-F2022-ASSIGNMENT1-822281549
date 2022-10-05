@@ -11,11 +11,6 @@ October 7th, 2022
     background-color: rgb(218, 130, 52);
 }
 
-.body{
-    background-image: ("/content/images/IMG_20181115_224231_620.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .column-containers{
     text-align: center;
@@ -94,26 +89,15 @@ October 7th, 2022
 
 <!--Projects Page-->
 
-.projects-left-column{
-    float: left; 
-    width: 30%;
-}
-
-.projects-center-columns{
-    float: left; 
-    width: 30%;
-}
-
-.projects-right-column{
-    float: right; 
-    width: 30%;
-}
-
 .project-carousel-object-background{
-    background-color: rgb(236, 232, 230);
-    border-radius: 25px; 
+    background-color: rgb(198, 150, 126);
+    border-radius: 20px;
     height: 500px; 
-    width: 380px;
+    /*width: 380px;*/
+}
+
+.project-button-controls{
+    background-color: rgb(218, 130, 52);
 }
 
 .project-heading{
